@@ -40,5 +40,13 @@
     3º - Run main tool
          sudo ./netool.sh
 
+# Credits
+    All the credits goes go:
+    Fyodor (nmap) | Alor & Naga (ettercap) | HD Moore (metasploit)
+    Moxie M (sslstrip) | Chris L (driftnet) | j0rgan (cupp.py)
+    ReL1K (unicorn.py) | Cleiton P (inurlbr.php) | KyRecon (shellter)
+    Chris Tyler (zenity) and Rob McCool (apache).
+
 
 _EOF
+
