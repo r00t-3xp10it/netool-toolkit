@@ -1,4 +1,4 @@
-# NETOOL TOOLKIT - MitM pentesting toolkit [ scan/sniff/exploit ]
+# NETOOL - MitM pentesting toolkit [ scan/sniff/exploit ]
     Version release : v4.6
     Author : pedro ubuntu  [ r00t-3xp10it ]
     Distros Supported : Linux Ubuntu, Kali, Mint, Parrot OS
