@@ -1,4 +1,4 @@
-# NETOOL TOOLKIT - MitM pentesting toolkit
+# NETOOL TOOLKIT - MitM pentesting toolkit [ scan/sniff/exploit ]
     Version release : v4.6
     Author : pedro ubuntu  [ r00t-3xp10it ]
     Distros Supported : Linux Ubuntu, Kali, Mint, Parrot OS
@@ -17,6 +17,11 @@
     pentesting and also to experience users to use allmost all features that the
     Man-In-The-Middle can provide under local lan, since scanning, sniffing and
     social engeneering attacks (metasploit & veil needs to be manually installed)
+
+    netool toolkit its 'divided' in 3 diferent categories, the first stage it will
+    be scanning/gathering-information using Nmap framework, the second stage it will
+    be sniffing/manipulation-of-tcp-packets using Ettercap framework and the last stage
+    it will be using 'rootsector' module to deliver a payload to target (mitm+dns_spoof)
 
 # Framework additional settings
     Additional tool settings can be configurated just by editing the 'toolkit_config'
@@ -41,7 +46,6 @@
          sudo ./netool.sh
 
 # Credits
-    All the credits goes go:
     Fyodor (nmap) | Alor & Naga (ettercap) | HD Moore (metasploit)
     Moxie M (sslstrip) | Chris L (driftnet) | j0rgan (cupp.py)
     ReL1K (unicorn.py) | Cleiton P (inurlbr.php) | KyRecon (shellter)
