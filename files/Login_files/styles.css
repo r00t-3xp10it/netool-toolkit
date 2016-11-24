@@ -1,0 +1,121 @@
+body { COLOR: #000000; TEXT-ALIGN: left; FONT-SIZE: 0.7em; FONT-WEIGHT: normal; FONT-STYLE: normal; TEXT-DECORATION: none; }
+body, th, td, tr, div, span { FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif; }
+h1 { COLOR: #731472; FONT-SIZE: 1.5em; FONT-WEIGHT: bold; }
+em { font-weight: bold; font-style: normal; }
+a img { border: none; }
+ul {list-style-type:square;margin:0px;padding-left:16px;}
+.tableIcon {margin-right:4px;}
+
+.Menu     { background-color: #FFFFFF;border: 1px solid #C6C2CD;margin-bottom:0em; }
+.MenuVBar { background-color: #FFFFFF; text-decoration: none; }
+
+.Menu1Item, .Menu1ItemOver { padding:0em 0.7em 0em 0.7em; background: url(/images/gradient.gif); text-align: left;}
+.Menu1ItemSymbol { vertical-align:middle; background: url(/images/gradient.gif); text-align: left;padding:0em 0em  0em 0.7em;}
+.Menu1Item a { font-size: 1.2em; color: black; text-decoration: none; font-weight: normal;text-align: left;}
+.Menu1ItemOver a { font-size: 1.2em; color: black; text-decoration: none;font-weight: normal;}
+.Menu1Item a:hover, .Menu1ItemOver a:hover { font-size: 1.2em; color: black; font-weight: normal; text-decoration: none;text-align:left;}
+
+.Menu2Item, .Menu2ItemOver { padding:0.5em 0.7em 0.5em 0.5em;background-color: #FFFFFF; text-align: left;}
+.Menu2Item a { font-size: 1em; color: black; text-decoration: none; }
+.Menu2ItemOver a { font-size: 1em; color: #7962AA; font-weight: normal;color:#7962AA; text-decoration: none; }
+.Menu2Item a:hover, .Menu2ItemOver a:hover { font-size: 1em; color: #731472; text-decoration: underline; }
+
+.PageMessage { background-color: #FFF; font-size: 1.1em; font-weight: bold;border: 1px solid #C6C2CD;margin-top:10px }
+.PageMessage td {padding: 2px}
+.PageMessage img {margin-top: 1px}
+
+.Table_Title              { font-size: 1em; COLOR: white; background-color: #999999; FONT-WEIGHT: bold; }
+.Table_InfoBar            { font-size: 1em; COLOR: white; background-color: #999999; }
+.Table_InfoBarWarning     { font-size: 1em; COLOR: red; background-color: #999999; }
+.Table_DataLabel          { font-size: 1em; background-color: #EDEDED; COLOR: #7962AA; FONT-WEIGHT: bold; }
+.Table_DataValue          { font-size: 1em; background-color: #EDEDED; COLOR: #7962AA; FONT-WEIGHT: normal; }
+.Table_DataValue_Selected { font-size: 1em; background-color: #EDEDED; COLOR: #7962AA; FONT-WEIGHT: normal; }
+
+.Tab_Inactive a,.Tab_Active a {text-decoration:none;color:white}
+.Tab_Inactive       { font-size: 1.1em; COLOR: #7962AA; background-color: #999999; FONT-WEIGHT: bold; }
+.Tab_Active         { font-size: 1.1em; COLOR: white; background-color: #731472; FONT-WEIGHT: bold; }
+
+.Panel_ButtonBar              { background-color: white; COLOR: #FFFFFF; FONT-WEIGHT: bold; }
+.Panel_ButtonBar_Button       { background-color: #CCCCCC; COLOR: #333333; FONT-WEIGHT: bold; TEXT-ALIGN: center; }
+.Panel_ButtonBar_Button:Hover { background-color: #CCCCCC; COLOR: #731472; FONT-WEIGHT: bold; TEXT-ALIGN: center; }
+
+.Form_Title            { font-size: 1em; background-color: #CCCCCC; COLOR: #7962AA; FONT-WEIGHT: bold; }
+.Form_DataLabel        { font-size: 1em; }
+.Form_InputText        { width: 175pt; COLOR: #000000; }
+.Form_InputPassword    { width: 175pt; COLOR: #000000; }
+.Form_InputSelect      { width: 175pt; COLOR: #000000; }
+.Form_InputSelect_Wide { width: 250pt; COLOR: #000000; }
+
+.wizardGrpToolbar { font-size: 12px; font-weight: bold; background-color: #ffffff;}
+.wizardGrpTitle { font-size: 12px; font-weight: bold; color: #7962AA ; }
+.wizardGrpTxt { font-size: 11px; font-weight: normal; color: #807F83; }
+
+.wizardCentralPanel { font-size: 11px; font-weight: normal; color: #000000; background-color: #ffffff; }
+.wizardVarAlias { font-size: 11px; font-weight: normal; color: #000000; }
+.wizardVarDesc { font-size: 11px; font-weight: normal; color: #000000; }
+.wizardVarError { font-size: 11px; font-weight: bold; color: #FF0000; }
+
+.wizardFrontCompletePanel { font-size: 11px; color: #000000; background-color: #ffffff; }
+
+.wizardSummaryText { font-family: Fixedsys, Courier New, Courier ; font-size: 1em; font-weight: normal; color: #000000; text-align:left; background-color: #ffffff; }
+.wizardFooterPanel { font-size: 11px; font-weight: normal; color: #000000; background-color: #ffffff; }
+.wizardFooterPanelButton { font-size: 11px; font-weight: normal; color: #000000; background-color: #ffffff; cursor: default; }
+
+.panelTitle          { background-color: #731472; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold; }
+.panelDelimiter      { background-color: #999999; COLOR: #ffffff; FONT-SIZE: 12px; }
+.panelToolbar        { background-color: #CC9933; COLOR: #FFFFFF; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-ALIGN: center; }
+.panelLine           { background-color: #999999; COLOR: #ffffff; }
+.panelButton         { COLOR: #FFFFFF; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: underline; }
+.panelButtonSelected { COLOR: #FFFFFF; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: underline; }
+
+.error  { FONT-WEIGHT: bold;  COLOR: #993333; }
+.margin { MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; }
+.warning { FONT-SIZE: 1.1em; COLOR: #993333; LINE-HEIGHT: normal; }
+.nogo { COLOR: white; background-color: #999999; }
+
+.banner {padding: 0px;background:url(/images/banner_back.gif) repeat-x top left;font: normal 10pt verdana;}
+.product {color:#FFFFFF ;font: bold 14pt verdana;text-align:left;margin-left: 15px;}
+.nopadtable td{padding: 0px;}
+
+.displaySettings {color:white;margin: 0px 0px 0px 15px;}
+.displaySettings a, .pageSettings a:visited {font-weight:normal;color: white;}
+
+.login {color:black;vertical-align:bottom;text-align:right;padding:0px 10px 5px 0px;background:url(/images/banner_right.gif) no-repeat top right; }
+.login a, .login a:visited {font-weight:normal;color: black;}
+
+.langSelect a:hover,.login a:hover { color: #C9CACC }
+.langSelect form { display: inline;}
+.black { background-color: #000000; }
+form {margin:0px;}
+
+.NavBar, .NavBar a, .NavBar a:visited { font-size: 1em; font-weight: bold; color: #807F83; }
+.NavBar a:hover { font-size: 1em; font-weight: bold; color: #7962AA; }
+
+.contentcontainer { margin: 5px 0px 5px 0px;}
+.contentcontainer a:link, .contentcontainer a:visited { color: #807F83;}
+.contentcontainer a:hover { color: #7962AA; }
+.contentcontainer hr {visibility:hidden;}
+.contentitem {border: 1px solid #C6C2CD;padding:10px;background: url(images/gradient.gif) repeat-x bottom; text-align: left;}
+
+.homeitemdescr { font-size: 1.1em; }
+.homeline a:hover { font-weight: bold; color:#7962AA; }
+.homeline a:link,.homeline a:visited,.homeline a:active { font-weight: bold; color:#807F83;}
+
+.itemtitle  { color: #731472; font-size: 1.6em; font-weight: bold; }
+
+.blocktitle { font-size: 1.2em; color: #000000; font-weight: bold; }
+.blocktitle a:hover { font-weight: bold; color:#731472}
+.blocktitle a:link,.blocktitle a:visited,.blocktitle a:active { font-weight: bold; color:#731472}
+
+.hwintftable img { display: block; }
+.hwintftable a:hover { font-weight: bold; color:#7962AA; }
+.hwintftable a:link,.hwintftable a:visited,.hwintftable a:active { font-weight: bold; color:#807F83;}
+
+.edittable td       { padding-left: 4px; padding-right: 4px; }
+.edittable th       { background-color: #FFFFFF; padding-left: 4px; padding-right: 4px; }
+.edittable .oddrow  { background-color: #CECECE; }
+.edittable .evenrow { background-color: #EFEFEF; }
+
+.task { font-size: 1.1em;padding:0px 0px 5px 10px;}
+.task a:link,.task a:visited,.task a:active { color:#807F83; }
+.task a:hover { color:#731472;}

@@ -1,0 +1,100 @@
+##########################################################################
+#                                                                        #
+# The following config file will allow you to customize settings within  #
+# netool toolkit, The lines that do not have comment code ("#") are the  #
+# fields you want to toy with. There are additional options, read the    #
+# comments for additional config settings.                               #
+#                                                                        #
+#          REMENBER THAT CHANGING THIS SETTINGS WILL AFFECT              #
+#           netool.sh AND priv8.sh SCRIPTS WAY OF WORKING.               #
+#             -[ Suspicious Shell Activity Labs 2015 ]-                  #
+#                                                                        #
+##########################################################################
+
+
+# set temporary download folder
+# the toolkit will download files to a temp folder
+# and then copy the files to the needed path
+TEMP_FOLDER=/tmp/evil
+
+
+# display public ip address in r00tsect0r module
+# accepted values are YES or NO
+DISPLAY_PUBLIC_IP=YES
+
+
+# display changelog at startup in every new update done
+# accepted values are YES or NO
+SET_CHANGELOG=YES
+
+
+# Clean toolkit logs (.log) on exit?
+# accepted values are YES or NO
+CLEAN_LOGS=YES
+
+
+# Clean handlers stored (resource files) on exit?
+# this setting will delete all listenners.rc
+# accepted values are YES or NO
+CLEAN_HANDLERS=NO
+
+
+# Clean t00lkit database on exit?
+# this setting will clean database.db file
+# accepted values are YES or NO
+CLEAN_DATABASE=NO
+
+
+# in post exploitation module the 'migrate fuction' will
+# migrate the open session to 'wininit.exe' proccess by default
+# in this field you can change that to migrate to another
+# proccess (example -> notepad.exe or explorer.exe)
+MIGRATE_TO=wininit.exe
+
+
+# set php5 installation path
+PHP5_INSTALL_PATH=/etc/php5
+
+
+# zenmap-nmap install path
+ZENMAP_INSTALL_PATH=/usr/share/nmap
+
+
+# ettercap install path
+ETTERCAP_INSTALL_PATH=/usr/share/ettercap
+
+
+# macchanger install path
+MACCHANGER_INSTALL_PATH=/usr/share/macchanger
+
+
+# metasploit install path
+METASPLOIT_INSTALL_PATH=/usr/share/metasploit-framework
+
+
+# apache web root path
+APACHE_INSTALL_PATH=/var/www/html
+
+
+# driftnet install path
+DRIFTNET_INSTALL_PATH=/usr/share/doc/driftnet
+
+
+# etter.conf install path
+ETTERCONF_INSTALL_PATH=/etc/ettercap/etter.conf
+
+
+# etter.dns install path
+ETTERDNS_INSTALL_PATH=/etc/ettercap/etter.dns
+
+
+# etter.services path
+ETTERSERV_INSTALL_PATH=/usr/share/ettercap/etter.services
+
+
+# veil evasion install path
+VEIL_EVASION_CONF=/etc/veil/settings.py
+
+
+# priv8.sh install path
+ROOTSECTOR_INSTALL_PATH=modules/priv8.sh

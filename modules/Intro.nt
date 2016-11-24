@@ -1,0 +1,55 @@
+
+                                                         NETOOL TOOLKIT 4.6 STABLE CHANGELOG
+                                                         'MITM PENTESTING OPENSOURCE TOOLKIT'
+                                                                      CODENAME: SINGLE_BYTE_XOR
+
+                                The toolkit was named of 'Single_byte_XOR' because this version it focous
+                                in obfuscating payloads with the inclusion of Shellter PE injector and
+                                diferent msf encoders with diferent interactions to evade AV detection
+                                (windows binaries) also the tool will ship with the new automated exploit
+                                'web_delivery' that execute the 2º stage in ram without touching disk.
+
+                                we now have 5 modules that trys to evade AV detection (windows):
+                                2  - Backdooring EXE Files -> bdf_backdoor module
+                                4  - Meterpreter (ReL1K) -> powershell payload
+                                5  - Web_delivery (PSH/PYTHON) -> powershell or python
+                                27 - Generate shellcode -> c-to-exe -> veil-evasion
+                                29 - Shellter PE infector -> inject shellcode into windows binaries
+
+                                                       ☆ ☆ ☆ ☆ ☆
+
+
+                                [ Upgraded ]
+                                msfcli replaced by msfconsole
+
+                                [ Bugs Fixed ]
+                                ettercap IPV6 bug -> incorrect target selection /// ///
+                                host-a-file -> phishing webpages displays under MitM
+
+                                [ New Modules ]
+                                MitM ROUTER phishing -> capture router credentials
+                                unicorn.py -> HTA drive-by URL payload execution
+                                java.jar phishing -> Drive-by URL payload execution
+                                adobe_flash_hacking_team_uaf -> exploit + mitm + dns_spoof
+                                web_delivery msf module -> python or powershell payloads
+                                Shellter PE injector (by kyREcon) binaries windows obfuscator
+
+                                [ Improved ]
+                                netool toolkit Gnu Public License (GPL) display
+                                build shortcut to toolkit -> gnome-desktop-item-edit
+                                file-selection GUI to ettercap -> zenity displays added
+                                host-a-file attack -> zenity file-selection GUI added 
+                                windows payloads encoding (diferent msf encoders/interactions)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  HOME PROJECT: http://sourceforge.net/projects/netoolsh/?source=directory
+                  REPORT BUGS: https://sourceforge.net/p/netoolsh/discussion/general/thread
+                  MY WIKI: http://sourceforge.net/p/netoolsh/wiki/netool.sh%20script%20project
+                  VIDEO: https://www.youtube.com/playlist?list=PL6lei9H-Ej0KoXxkxWgNC6C30Sv8QaHUC
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                        ☠ ☠ ☠ ☠ ☠
+                                                               Special Thanks to: 'istvan, igor, milton'
+                               for all the help provided in testing/debugging modules in this new version
+                     @Suspicious Shell Activity Labs @r00tsector @inurlbr @En0x-Sec_Lab @dwebcrew
+                                                                      Copyright © 2015 - netool toolkit

