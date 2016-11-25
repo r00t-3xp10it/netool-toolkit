@@ -1,3 +1,9 @@
+[![Version](https://img.shields.io/badge/NETOOL-4.6-brightgreen.svg?maxAge=259200)]()
+[![Build](https://img.shields.io/badge/Supported_OS-linux-orange.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+
+
 # NETOOL - MitM pentesting toolkit [ scan/sniff/exploit ]
     Version release : v4.6
     Author : pedro ubuntu  [ r00t-3xp10it ]
